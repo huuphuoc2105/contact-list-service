@@ -1,0 +1,6 @@
+<app-search-filter (search)="onSearch($event)"></app-search-filter>
+<ul>
+  <li *ngFor="let contact of filteredContacts">
+    <a [routerLink]="['/details', contact.id]">{{ contact.name }}</a>
+  </li>
+</ul>
